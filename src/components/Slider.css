@@ -1,0 +1,63 @@
+.chevronLeft{
+    display: none;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 150px;
+    cursor: pointer;
+}
+.chevronRight{
+    display: none;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 150px;
+    cursor: pointer;
+    right: 0px;
+}
+.main{
+    display: flex;
+    overflow-x: hidden;
+    width: 100%;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+.img{
+    min-width: 100%;
+    object-fit: fill;
+    display: inline-block;
+    object-position: left top;
+    margin-right: 1.25rem;
+    margin-left: 1rem;
+    border-radius: 0.375rem;
+    --tw-border-opacity: 1;
+    border-color: rgb(156 163 175 / var(--tw-border-opacity));
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    transition-duration: 100ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+.img:hover{
+    border-width: 4px;
+}
+@media (min-width: 768px) {
+    .chevronLeft {
+        display: block !important;
+    }
+    .chevronRight {
+        display: block !important;
+    }
+    .img {
+        height: 310px;
+    }
+}
